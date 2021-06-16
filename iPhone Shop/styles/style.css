@@ -1,0 +1,221 @@
+/* menu */
+#menuDiv{
+    position: relative;
+    margin-left: 12%;
+    margin-bottom: 10%;
+}
+div .menuItem{
+    float: left;
+    background-color: whitesmoke;
+    padding: 2%;
+}
+.menuItemList{
+    visibility: unset;
+    font-size: 0px;
+    position: unset;
+    display: grid;  
+    grid-auto-columns: initial;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch; 
+}
+.menuItem:hover{
+    border-bottom: 5%;
+    border-color: lawngreen;
+}
+.menuItem:hover .menuItemList{
+    visibility: visible;
+    font-size: 12pt;
+}
+
+/* body */
+.phoneImg{
+    margin: 5px 0px;
+    width: 47%;
+    height: 90%;
+    float: right;
+    background-repeat: repeat-x;
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+}
+.phoneName{
+    margin: 0px 15px;
+    font-kerning: none;
+    font-size: 15pt;
+    font-style: normal;
+}
+.stars{
+    width: 25%;
+    height: 25%;
+    background-repeat: repeat-x;
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+}
+.block{
+    width: 30%;
+    height: 35%;
+    padding: 1%;
+    margin: 8px;
+    border-radius: 15px;
+    border-width: 2px;
+    background-color: white;
+    float: left;
+}
+.price{
+    margin: 15px 15px;
+    font-kerning: none;
+    font-size: 15pt;
+    font-style: normal;
+    text-align: justify;
+}
+.buyBtn{
+    margin: -15px 15px;
+    right: auto;
+    width: 20%;
+    height: 35%;
+    background-repeat: repeat-x;
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+} 
+.newFont{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: unset;
+    font-size: 25;
+    text-align: center;
+    
+}
+
+
+/* Animation */
+* {
+    transition: all .1s;
+}
+
+/* Desktops */
+@media screen and (max-width : 1000px) {
+    .phoneImg  {
+        width: 100px;
+        height: 130px;
+    }
+    .phoneName {
+        font-size: 10;
+    }
+    .stars {
+        margin-left: 9px;
+        width: 50px;
+        height: 30px;
+    }
+    .block {
+        margin-left: 30px;
+        width: 200px;
+        height: 140px;
+    }
+    .price {
+        font-size: 10;
+    }
+    .buyBtn {
+        height: 40px;
+    }
+    .newFont{
+        font-size: 10;
+    }
+    .menuItem{
+        font-size: 10;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width : 768px) {
+    .phoneImg  {
+        width: 70px;
+        height: 100px;
+    }
+    .phoneName {
+        font-size: 10;
+    }
+    .block {
+        width: 200px;
+        height: 120px;
+        margin-left: 2%;
+    }
+    .price {
+        font-size: 10;
+    }
+    .buyBtn {
+        height: 35px;
+    }
+    .menuItem{
+        font-size: 6;
+    }
+    .block{
+        margin-left: 40px;
+        width: 170px;
+        height: 110px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width : 480px) {
+    .phoneImg  {
+        width: 60px;
+        height: 80px;
+    }
+    .phoneName {
+        font-size: 7;
+    }
+    .price {
+        font-size: 7;
+    }
+    .block{
+        height: 100px;
+        width:140px;
+    }
+    .buyBtn{
+        height: 30px;
+        width: 30px;
+    }
+    .stars{
+        width: 40px;
+        height: 20px;
+    }
+    .block{
+        height: 90px;
+    }
+    .menuItem{
+        font-size: 7;
+    }
+}
+
+/* Monitor Adapting */
+@media screen and (max-width : 380px) {
+    .phoneImg  {
+        width: 60px;
+        height: 80px;
+    }
+    .phoneName {
+        font-size: 7;
+    }
+    .price {
+        font-size: 7;
+    }
+    .block{
+        height: 100px;
+        width:140px;
+    }
+    .buyBtn{
+        height: 30px;
+        width: 30px;
+    }
+    .stars{
+        width: 40px;
+        height: 20px;
+    }
+    .block{
+        height: 90px;
+    }
+    .menuItem{
+        font-size: 5;
+    }
+}
